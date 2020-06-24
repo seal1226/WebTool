@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>カウントダウンサンプル</title>
+		<link rel="stylesheet" href="./css/style.css">
+	</head>
+	<body>
+		<header class="header">
+			<h1>通販サイト的なサムシング</h1>
+			<p>限定販売！！残りわずか！！！</p>
+			<p id="timer"></p>
+		</header>
+
+		<script src="./js/Countdown.js"></script>
+		<script>
+			new Countdown({
+				//CSSクエリ(IDを指定)
+				elemName: '#timer',
+				//日付を指定()
+				exitTime: new Date("2020-6-25-23:7"),
+				//時間切れの際に表示する文字
+				exitText: "0日0時0分0秒"
+			});
+		</script>
+	</body>
+</html>

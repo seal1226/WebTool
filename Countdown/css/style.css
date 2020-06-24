@@ -1,0 +1,14 @@
+.header{
+    background-color: gray;
+    color:white;
+}
+#timer{
+    font-size: 1.8rem;
+    text-align:center;
+}
+
+.countdown-unit{
+    color: red;
+    font-size: 0.9rem;
+    vertical-align: baseline;
+}
