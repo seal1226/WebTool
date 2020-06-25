@@ -17,11 +17,11 @@
 			new Countdown({
 				//CSSクエリ(IDを指定)
 				elemName: '#timer',
-				//日付を指定()
-				exitTime: new Date("2020-6-25-23:7"),
+				//日付を指定(2020年6月30日 ※月は-1して！！！！！まじでハマるよ！！！！！)
+				exitTime: new Date(2020, 5, 30),
 				//時間切れの際に表示する文字
 				exitText: "0日0時0分0秒"
-			});
+			}).execute();
 		</script>
 	</body>
 </html>
