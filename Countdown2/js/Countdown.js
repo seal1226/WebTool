@@ -19,6 +19,7 @@ Countdown.prototype.remainingTime = function(){
         + '<span class="countdown-unit">日</span>'   + ('00' + hour).slice(-2)
         + '<span class="countdown-unit">時間</span>' + ('00' + minute).slice(-2) 
         + '<span class="countdown-unit">分</span>'   + ('00' + second).slice(-2)
+	+ '.'                                        + ('00' + mill).slice(-2)
         + '<span class="countdown-unit">秒</span>';
 
     var ret = new Object();
@@ -41,5 +42,5 @@ Countdown.prototype.execute = function(){
             else{
                 this.elem.innerHTML = obj.remainingTime;
             }
-    }.bind(this), 100);
+    }.bind(this), 10);
 }
