@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>カウントダウンサンプル</title>
+		<link rel="stylesheet" href="./css/style.css">
+	</head>
+	<body>
+		<header class="header">
+			<h1>通販サイト的なサムシング</h1>
+			<p>限定販売！！残りわずか！！！</p>
+			<p id="timer"></p>
+		</header>
+
+	
+		<!--使い方説明-->
+
+		<!--step1: 読み込み-->
+		<script src="./js/Countdown.js"></script>
+		<script>
+
+			//step2:　カウントダウンを開始したいエレメントを指定
+			let countDown = new Countdown({
+				elemName: 'timer', //エレメントID名
+				fromTime: '09:00', //カウントダウン開始時間
+				toTime: '19:30',　 //カウントダウン終了時間
+			});
+
+			//stemp3: 起動
+			countDown.start();
+		</script>
+	</body>
+</html>
